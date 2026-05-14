@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gracias — Argus</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%231a1f3a'/%3E%3Ccircle cx='50' cy='50' r='25' fill='%23f4f1de'/%3E%3Ccircle cx='50' cy='50' r='12' fill='%231a1f3a'/%3E%3Ccircle cx='55' cy='45' r='4' fill='%23f4f1de'/%3E%3C/svg%3E">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'argus-navy': '#1a1f3a',
+            'argus-cream': '#f4f1de',
+            'argus-gold': '#d4a047',
+            'argus-rust': '#c45a3a',
+          },
+          fontFamily: {
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+            'serif': ['Cormorant Garamond', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+    @keyframes blink {
+      0%, 92%, 100% { transform: scaleY(1); }
+      95% { transform: scaleY(0.1); }
+    }
+    .eye { animation: blink 6s infinite; transform-origin: center; }
+  </style>
+</head>
+<body class="bg-argus-cream text-argus-navy antialiased min-h-screen flex items-center justify-center px-6">
+  <div class="max-w-2xl text-center">
+    <div class="flex justify-center mb-8">
+      <svg width="80" height="80" viewBox="0 0 100 100" class="eye">
+        <circle cx="50" cy="50" r="45" fill="#1a1f3a"/>
+        <circle cx="50" cy="50" r="30" fill="#f4f1de"/>
+        <circle cx="50" cy="50" r="14" fill="#1a1f3a"/>
+        <circle cx="56" cy="44" r="5" fill="#f4f1de"/>
+      </svg>
+    </div>
+
+    <p class="text-sm font-semibold tracking-widest uppercase text-argus-rust mb-4">
+      Cien ojos te ven
+    </p>
+
+    <h1 class="serif text-4xl md:text-6xl font-semibold leading-tight mb-6">
+      Gracias. <em class="text-argus-rust">Ya estás en la lista.</em>
+    </h1>
+
+    <p class="text-lg md:text-xl text-argus-navy/80 leading-relaxed mb-10">
+      Te enviaré tu reporte personalizado en los próximos días. Mientras tanto, sígueme en X para ver el avance del proyecto y descubrir cómo aparecen las marcas españolas cuando ChatGPT, Claude, Perplexity y Gemini recomiendan.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-3 justify-center">
+      <a href="https://x.com/byargos" target="_blank" rel="noopener"
+         class="inline-flex items-center justify-center gap-2 px-7 py-4 bg-argus-navy text-argus-cream font-semibold rounded-lg hover:bg-argus-rust transition-colors">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        Seguir @byargos en X
+      </a>
+      <a href="/"
+         class="inline-flex items-center justify-center gap-2 px-7 py-4 bg-transparent border-2 border-argus-navy text-argus-navy font-semibold rounded-lg hover:bg-argus-navy hover:text-argus-cream transition-colors">
+        Volver al inicio
+      </a>
+    </div>
+
+    <p class="text-sm text-argus-navy/50 mt-12">
+      Argus · byargus.com
+    </p>
+  </div>
+</body>
+</html>

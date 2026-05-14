@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Argus — Cien ojos vigilando tu marca en ChatGPT, Claude, Perplexity y Gemini</title>
+  <meta name="description" content="Cuando una IA recomienda en tu sector, ¿aparece tu marca o la de tu competidor? Argus monitoriza cómo te ven ChatGPT, Claude, Perplexity y Gemini. Reporte gratis para los primeros 50.">
+  <meta property="og:title" content="Argus — Cien ojos vigilando tu marca en la IA">
+  <meta property="og:description" content="¿Aparece tu marca cuando ChatGPT, Claude, Perplexity o Gemini recomiendan en tu sector? Reporte gratis.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://byargus.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%231a1f3a'/%3E%3Ccircle cx='50' cy='50' r='25' fill='%23f4f1de'/%3E%3Ccircle cx='50' cy='50' r='12' fill='%231a1f3a'/%3E%3Ccircle cx='55' cy='45' r='4' fill='%23f4f1de'/%3E%3C/svg%3E">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'argus-navy': '#1a1f3a',
+            'argus-cream': '#f4f1de',
+            'argus-gold': '#d4a047',
+            'argus-rust': '#c45a3a',
+          },
+          fontFamily: {
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+            'serif': ['Cormorant Garamond', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+    .eye-bg {
+      background-image: radial-gradient(circle at 20% 30%, rgba(212,160,71,0.08) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 70%, rgba(196,90,58,0.06) 0%, transparent 50%);
+    }
+    @keyframes blink {
+      0%, 92%, 100% { transform: scaleY(1); }
+      95% { transform: scaleY(0.1); }
+    }
+    .eye { animation: blink 6s infinite; transform-origin: center; }
+    @keyframes pulse-slow {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
+    }
+    .pulse-dot { animation: pulse-slow 2.5s infinite; }
+  </style>
+</head>
+<body class="bg-argus-cream text-argus-navy antialiased">
+
+  <!-- Nav -->
+  <nav class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <svg width="32" height="32" viewBox="0 0 100 100" class="eye">
+        <circle cx="50" cy="50" r="45" fill="#1a1f3a"/>
+        <circle cx="50" cy="50" r="25" fill="#f4f1de"/>
+        <circle cx="50" cy="50" r="12" fill="#1a1f3a"/>
+        <circle cx="55" cy="45" r="4" fill="#f4f1de"/>
+      </svg>
+      <span class="font-bold text-xl tracking-tight">Argus</span>
+    </div>
+    <div class="flex items-center gap-2 text-sm">
+      <span class="w-2 h-2 bg-argus-rust rounded-full pulse-dot"></span>
+      <span class="text-argus-navy/60">Construyendo en público</span>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="eye-bg max-w-6xl mx-auto px-6 pt-12 md:pt-20 pb-16 md:pb-24">
+    <div class="max-w-4xl">
+      <p class="text-sm md:text-base text-argus-rust font-semibold tracking-widest uppercase mb-6">
+        GEO · AI-SEO · Monitoreo IA
+      </p>
+      <h1 class="serif text-4xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] tracking-tight mb-8">
+        Hera puso cien ojos a vigilar el mundo.<br>
+        <em class="text-argus-rust">Argus pone cien ojos</em> a vigilar tu marca en ChatGPT, Claude, Perplexity y Gemini.
+      </h1>
+      <p class="text-lg md:text-xl text-argus-navy/80 leading-relaxed mb-10 max-w-3xl">
+        Cuando una IA recomienda en tu sector, ¿aparece tu marca o la de tu competidor? Te lo decimos cada lunes con un reporte real. Para agencias y equipos de marketing en España.
+      </p>
+
+      <!-- Form -->
+      <form name="waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/gracias.html"
+            class="flex flex-col sm:flex-row gap-3 max-w-xl mb-4">
+        <input type="hidden" name="form-name" value="waitlist">
+        <p class="hidden">
+          <label>No rellenar: <input name="bot-field"></label>
+        </p>
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="tu@email.com"
+          class="flex-1 px-5 py-4 rounded-lg bg-white border-2 border-argus-navy/15 focus:border-argus-navy focus:outline-none text-base"
+        >
+        <button
+          type="submit"
+          class="px-7 py-4 bg-argus-navy text-argus-cream font-semibold rounded-lg hover:bg-argus-rust transition-colors duration-200 whitespace-nowrap"
+        >
+          Quiero mi reporte gratis
+        </button>
+      </form>
+      <p class="text-sm text-argus-navy/60">
+        Reporte gratuito para los primeros 50 emails. Sin spam, sin newsletter automatizada. Lo escribo yo.
+      </p>
+    </div>
+  </section>
+
+  <!-- 3 datos -->
+  <section class="bg-argus-navy text-argus-cream py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="text-sm font-semibold tracking-widest uppercase text-argus-gold mb-3">
+        Tres datos que ya nadie discute
+      </p>
+      <h2 class="serif text-3xl md:text-5xl font-semibold leading-tight mb-12 max-w-3xl">
+        La IA ya está respondiendo por ti. La pregunta es: <em class="text-argus-gold">¿te está nombrando?</em>
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-8 md:gap-12">
+        <div>
+          <div class="text-5xl md:text-6xl font-bold text-argus-gold mb-3 serif">1B+</div>
+          <p class="text-lg leading-relaxed text-argus-cream/85">
+            Consultas diarias responden ChatGPT, Claude, Perplexity y Gemini juntos. Si no nombran tu marca, tus clientes nuevos están eligiendo a otros.
+          </p>
+        </div>
+        <div>
+          <div class="text-5xl md:text-6xl font-bold text-argus-gold mb-3 serif">60%</div>
+          <p class="text-lg leading-relaxed text-argus-cream/85">
+            De los hispanos pregunta a una IA antes de buscar en Google según Reuters Digital News Report 2025. La conducta cambió. El SEO clásico ya no basta.
+          </p>
+        </div>
+        <div>
+          <div class="text-5xl md:text-6xl font-bold text-argus-gold mb-3 serif">0</div>
+          <p class="text-lg leading-relaxed text-argus-cream/85">
+            Es el número de herramientas serias de monitoreo GEO en español. En USA hay diez. Aquí, nada. Y la ventana se cierra.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Qué obtienes -->
+  <section class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+    <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-start">
+      <div>
+        <p class="text-sm font-semibold tracking-widest uppercase text-argus-rust mb-3">Qué incluye tu reporte gratis</p>
+        <h2 class="serif text-3xl md:text-5xl font-semibold leading-tight mb-6">
+          Un PDF, cero humo, datos accionables.
+        </h2>
+        <p class="text-lg text-argus-navy/80 leading-relaxed">
+          Me das el nombre de tu marca o cliente. Yo ejecuto 30 queries reales en las cuatro IAs. Cruzas los datos con tus competidores y descubres dónde estás invisible y dónde te estás llevando todo.
+        </p>
+      </div>
+
+      <div class="space-y-6">
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-argus-navy text-argus-cream flex items-center justify-center font-bold">1</div>
+          <div>
+            <h3 class="font-semibold text-lg mb-1">Dónde apareces y dónde no</h3>
+            <p class="text-argus-navy/70">Posición exacta de tu marca en respuestas de cada IA, para 30 queries de tu sector.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-argus-navy text-argus-cream flex items-center justify-center font-bold">2</div>
+          <div>
+            <h3 class="font-semibold text-lg mb-1">Top 3 competidores que te están comiendo</h3>
+            <p class="text-argus-navy/70">Quién aparece en tu lugar, con qué frecuencia y por qué cita la IA esas marcas y no la tuya.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-argus-navy text-argus-cream flex items-center justify-center font-bold">3</div>
+          <div>
+            <h3 class="font-semibold text-lg mb-1">URLs citadas como fuente</h3>
+            <p class="text-argus-navy/70">Lista exacta de páginas que las IAs usan para responder. Saber esto vale oro.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-argus-navy text-argus-cream flex items-center justify-center font-bold">4</div>
+          <div>
+            <h3 class="font-semibold text-lg mb-1">Tres acciones para empezar mañana</h3>
+            <p class="text-argus-navy/70">No teoría, recomendaciones concretas adaptadas a tu marca y sector.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="bg-argus-navy/5 py-16 md:py-24">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-8 items-start">
+        <div class="md:col-span-1">
+          <div class="w-32 h-32 rounded-full bg-argus-navy flex items-center justify-center">
+            <svg width="80" height="80" viewBox="0 0 100 100" class="eye">
+              <circle cx="50" cy="50" r="45" fill="#1a1f3a"/>
+              <circle cx="50" cy="50" r="30" fill="#f4f1de"/>
+              <circle cx="50" cy="50" r="14" fill="#1a1f3a"/>
+              <circle cx="56" cy="44" r="5" fill="#f4f1de"/>
+            </svg>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <p class="text-sm font-semibold tracking-widest uppercase text-argus-rust mb-3">Quién está detrás</p>
+          <h2 class="serif text-2xl md:text-4xl font-semibold leading-tight mb-4">
+            Soy Dani Go y estoy construyendo Argus en público.
+          </h2>
+          <p class="text-lg text-argus-navy/80 leading-relaxed mb-6">
+            Cada semana cuento el avance en X. Sin humo, sin promesas, datos reales sobre cómo te ven las IAs y por qué eso ya está decidiendo quién gana en tu sector.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a href="https://x.com/byargos" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 bg-argus-navy text-argus-cream rounded-lg hover:bg-argus-rust transition-colors text-sm font-medium">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              @byargos
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA final -->
+  <section class="max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
+    <h2 class="serif text-3xl md:text-5xl font-semibold leading-tight mb-6">
+      Las IAs ya están respondiendo. <em class="text-argus-rust">Cien ojos te dicen qué dicen de ti.</em>
+    </h2>
+    <p class="text-lg text-argus-navy/70 mb-10 max-w-2xl mx-auto">
+      Reporte gratis para los primeros 50 emails. Cinco minutos de tu tiempo. Cero código, cero compromiso.
+    </p>
+    <form name="waitlist-bottom" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/gracias.html"
+          class="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto">
+      <input type="hidden" name="form-name" value="waitlist-bottom">
+      <p class="hidden">
+        <label>No rellenar: <input name="bot-field"></label>
+      </p>
+      <input
+        type="email"
+        name="email"
+        required
+        placeholder="tu@email.com"
+        class="flex-1 px-5 py-4 rounded-lg bg-white border-2 border-argus-navy/15 focus:border-argus-navy focus:outline-none text-base"
+      >
+      <button
+        type="submit"
+        class="px-7 py-4 bg-argus-navy text-argus-cream font-semibold rounded-lg hover:bg-argus-rust transition-colors duration-200 whitespace-nowrap"
+      >
+        Quiero mi reporte gratis
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-argus-navy/10 py-10">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-argus-navy/60">
+      <div class="flex items-center gap-2">
+        <svg width="20" height="20" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="45" fill="#1a1f3a"/>
+          <circle cx="50" cy="50" r="25" fill="#f4f1de"/>
+          <circle cx="50" cy="50" r="12" fill="#1a1f3a"/>
+          <circle cx="55" cy="45" r="4" fill="#f4f1de"/>
+        </svg>
+        <span>Argus · byargus.com · construido con cien ojos y poco sueño</span>
+      </div>
+      <div class="flex gap-4">
+        <a href="https://x.com/byargos" target="_blank" rel="noopener" class="hover:text-argus-navy">@byargos</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
