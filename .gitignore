@@ -4,3 +4,24 @@ node_modules/
 .env.local
 .netlify/
 *.log
+
+# Internal client files — never commit
+argus_report_*.pdf
+argus_report_*.docx
+argus_reporte_*.pdf
+argus_reporte_*.docx
+argus_manual_proof_*.xlsx
+garrett_audit_*.xlsx
+email_to_*.md
+email_de_bienvenida.md
+linkedin_company_page.md
+generate_*.js
+~$*
+
+# Avatars / logos / working files
+argus_avatar_*.png
+Logo ARGUS.png
+
+# Build scripts (no Node.js in production landing)
+package.json
+package-lock.json
