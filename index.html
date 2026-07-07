@@ -1,470 +1,164 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Argus — Reporte semanal GEO/AEO interpretado por email</title>
-  <meta name="description" content="Cada lunes recibes un reporte real de cómo aparece tu marca en ChatGPT, Claude, Perplexity y Gemini. Interpretado por un humano, no por un dashboard. Especialización mercado español. Auditoría gratis para los primeros 50.">
-  <meta name="keywords" content="GEO, AEO, AI SEO, Generative Engine Optimization, posicionamiento ChatGPT, posicionamiento IA, monitor marca IA, visibilidad ChatGPT, visibilidad Claude, visibilidad Perplexity, visibilidad Gemini, citas IA, marca en respuestas IA, SEO IA español, reporte GEO semanal">
-  <meta name="author" content="Argus">
-  <meta property="og:title" content="Argus — Reporte semanal de cómo aparece tu marca en las IAs">
-  <meta property="og:description" content="Cada lunes en tu email: cómo apareces en ChatGPT, Claude, Perplexity y Gemini. Sin dashboards. Auditoría gratis para los primeros 50.">
+  <title>Argus — A hundred eyes on your business</title>
+  <meta name="description" content="Argus watches every open quote, unpaid invoice and cold lead — and chases them in your voice until they're a yes or a no. Built for small service businesses.">
+  <meta property="og:title" content="Argus — A hundred eyes on your business">
+  <meta property="og:description" content="It watches your open quotes, unpaid invoices and cold leads — and chases them in your voice until they're a yes or a no.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://byargus.com">
   <meta property="og:site_name" content="Argus">
-  <meta property="og:locale" content="es_ES">
+  <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Argus — Reporte semanal de cómo aparece tu marca en las IAs">
-  <meta name="twitter:description" content="Cada lunes en tu email. ChatGPT, Claude, Perplexity y Gemini. Interpretado por un humano, no por un dashboard.">
   <meta name="twitter:site" content="@byargos">
   <link rel="canonical" href="https://byargus.com/">
-  <link rel="alternate" hreflang="es" href="https://byargus.com/">
-  <link rel="alternate" hreflang="en" href="https://byargus.com/en/">
+  <link rel="alternate" hreflang="en" href="https://byargus.com/">
+  <link rel="alternate" hreflang="es" href="https://byargus.com/es/">
   <link rel="alternate" hreflang="x-default" href="https://byargus.com/">
-
-  <!-- JSON-LD: WebSite -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Argus",
-    "alternateName": "byargus",
-    "url": "https://byargus.com",
-    "description": "Monitor GEO/AEO en español. Cien ojos vigilando cómo aparecen las marcas en ChatGPT, Claude, Perplexity y Gemini.",
-    "inLanguage": "es-ES",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Argus",
-      "url": "https://byargus.com"
-    }
-  }
-  </script>
-
-  <!-- JSON-LD: Service -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%230e1220'/%3E%3Cellipse cx='50' cy='50' rx='32' ry='20' fill='none' stroke='%23d4a047' stroke-width='4'/%3E%3Ccircle cx='50' cy='50' r='10' fill='%23d4a047'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Schibsted+Grotesk:wght@400;500;700&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "AI Search Visibility Audit",
+    "serviceType": "Follow-up agent for small service businesses",
     "name": "Argus",
-    "description": "Servicio de auditoría e informe semanal de visibilidad de marcas en motores de IA generativa (ChatGPT, Claude, Perplexity, Gemini). El cliente recibe un reporte interpretado por un humano vía email, no acceso a una plataforma.",
-    "provider": {
-      "@type": "Organization",
-      "name": "Argus",
-      "url": "https://byargus.com"
-    },
-    "areaServed": [
-      { "@type": "Country", "name": "Spain" },
-      { "@type": "Country", "name": "Mexico" },
-      { "@type": "Country", "name": "Argentina" },
-      { "@type": "Country", "name": "Colombia" },
-      { "@type": "Country", "name": "Chile" }
-    ],
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "EUR",
-      "description": "Auditoría inicial gratuita para los primeros 50 emails"
-    }
+    "description": "Argus watches the state of a small business — quotes with no answer, overdue invoices, cold leads — and chases them in the owner's voice until they're resolved. Configured personally for each client.",
+    "provider": { "@type": "Organization", "name": "Argus", "url": "https://byargus.com" }
   }
   </script>
-
-  <!-- JSON-LD: FAQPage -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "¿Qué es GEO (Generative Engine Optimization) y por qué importa en 2026?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "GEO (Generative Engine Optimization) es la disciplina de optimizar tu marca para que aparezca y sea citada cuando las IAs generativas como ChatGPT, Claude, Perplexity o Gemini responden preguntas a sus usuarios. En 2026, más del 60% de los hispanos pregunta a una IA antes de buscar en Google según Reuters, por lo que el GEO se ha convertido en el nuevo SEO para marcas que quieren seguir siendo descubiertas."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿En qué se diferencia GEO de SEO tradicional?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "El SEO clásico optimiza para que aparezcas en los resultados de búsqueda de Google. El GEO optimiza para que aparezcas dentro de las respuestas generadas por las IAs (ChatGPT, Claude, Perplexity, Gemini). En GEO no compites por posiciones en una lista de enlaces azules, sino por ser citado como recomendación dentro de un texto generado. Ambos coexisten y se complementan."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Cómo funciona Argus exactamente?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Argus es un servicio, no una plataforma. Cada semana ejecuto manualmente las queries reales que tus clientes harían en ChatGPT, Claude, Perplexity y Gemini sobre tu sector. Identifico dónde apareces, dónde no, qué competidores están en tu lugar y qué fuentes cita la IA. Cada lunes recibes un reporte interpretado en tu email con tres acciones concretas para esa semana. No hay dashboard que entrar, no hay nada que aprender."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Funciona Argus para marcas españolas y LATAM?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí, Argus es el primer servicio GEO/AEO específicamente especializado en mercado hispano. Las queries se ejecutan en español neutro, español de España o variantes locales (México, Argentina, Colombia, Chile) según tu mercado. Las IAs responden de manera distinta según el idioma y la región, y Argus captura esa diferencia. También cubrimos clientes internacionales en inglés a petición — el primer cliente real lo es."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Cuándo veré resultados después de empezar a optimizar para GEO?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Los cambios en cómo las IAs te citan suelen reflejarse entre 2 y 6 semanas después de implementar mejoras (publicar contenido en fuentes que las IAs usan, mejorar tu presencia en Wikipedia/Reddit/medios sectoriales, conseguir reseñas). Argus mide la evolución semana a semana para que veas exactamente qué acciones funcionan y cuáles no."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Tengo que abandonar mi SEO actual para hacer GEO?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. SEO y GEO son complementarios. Las mismas señales que mejoran tu SEO (autoridad, contenido de calidad, citas en medios) también mejoran tu GEO porque las IAs leen y aprenden de los mismos sitios que Google indexa. Argus identifica las acciones que tienen doble retorno: mejoran tu posición en Google Y tu visibilidad en las IAs."
-        }
-      }
-    ]
-  }
-  </script>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%231a1f3a'/%3E%3Ccircle cx='50' cy='50' r='25' fill='%23f4f1de'/%3E%3Ccircle cx='50' cy='50' r='12' fill='%231a1f3a'/%3E%3Ccircle cx='55' cy='45' r='4' fill='%23f4f1de'/%3E%3C/svg%3E">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'argus-navy': '#1a1f3a',
-            'argus-cream': '#f4f1de',
-            'argus-gold': '#d4a047',
-            'argus-rust': '#c45a3a',
-          },
-          fontFamily: {
-            'sans': ['Inter', 'system-ui', 'sans-serif'],
-            'serif': ['Cormorant Garamond', 'Georgia', 'serif'],
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-    .serif { font-family: 'Cormorant Garamond', Georgia, serif; }
-    .eye-bg {
-      background-image: radial-gradient(circle at 20% 30%, rgba(212,160,71,0.08) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 70%, rgba(196,90,58,0.06) 0%, transparent 50%);
-    }
-    @keyframes blink {
-      0%, 92%, 100% { transform: scaleY(1); }
-      95% { transform: scaleY(0.1); }
-    }
-    .eye { animation: blink 6s infinite; transform-origin: center; }
-    @keyframes pulse-slow {
-      0%, 100% { opacity: 0.4; }
-      50% { opacity: 1; }
-    }
-    .pulse-dot { animation: pulse-slow 2.5s infinite; }
-  </style>
 </head>
-<body class="bg-argus-cream text-argus-navy antialiased">
+<body>
 
-  <!-- Nav -->
-  <nav class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
-    <div class="flex items-center gap-2">
-      <svg width="32" height="32" viewBox="0 0 100 100" class="eye">
-        <circle cx="50" cy="50" r="45" fill="#1a1f3a"/>
-        <circle cx="50" cy="50" r="25" fill="#f4f1de"/>
-        <circle cx="50" cy="50" r="12" fill="#1a1f3a"/>
-        <circle cx="55" cy="45" r="4" fill="#f4f1de"/>
-      </svg>
-      <span class="font-bold text-xl tracking-tight">Argus</span>
-    </div>
-    <div class="flex items-center gap-4 text-sm">
-      <div class="hidden sm:flex items-center gap-2">
-        <span class="w-2 h-2 bg-argus-rust rounded-full pulse-dot"></span>
-        <span class="text-argus-navy/60">Construyendo en público</span>
-      </div>
-      <div class="flex items-center gap-1 text-xs font-semibold">
-        <span class="px-2 py-1 bg-argus-navy text-argus-cream rounded">ES</span>
-        <a href="/en/" class="px-2 py-1 text-argus-navy/60 hover:text-argus-navy rounded transition-colors">EN</a>
-      </div>
-    </div>
+<header class="site-head">
+  <a class="wordmark" href="/"><svg width="26" height="16" viewBox="0 0 26 16" aria-hidden="true"><ellipse cx="13" cy="8" rx="12" ry="7" fill="none" stroke="#d4a047" stroke-width="1.5"/><circle cx="13" cy="8" r="3.2" fill="#d4a047"/></svg>ARGUS</a>
+  <nav class="head-right">
+    <a class="lang-link" href="/es/" lang="es">ES</a>
+    <a class="head-cta" href="#contact">Tell me what you chase</a>
   </nav>
+</header>
 
-  <!-- Hero -->
-  <section class="eye-bg max-w-6xl mx-auto px-6 pt-12 md:pt-20 pb-16 md:pb-24">
-    <div class="max-w-4xl">
-      <p class="text-sm md:text-base text-argus-rust font-semibold tracking-widest uppercase mb-6">
-        Reporte GEO · cada lunes · por email
-      </p>
-      <h1 class="serif text-4xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] tracking-tight mb-8">
-        Hera puso cien ojos a vigilar el mundo.<br>
-        <em class="text-argus-rust">Argus pone cien ojos</em> a vigilar tu marca en ChatGPT, Claude, Perplexity y Gemini.
-      </h1>
-      <p class="text-lg md:text-xl text-argus-navy/80 leading-relaxed mb-10 max-w-3xl">
-        Cuando una IA recomienda en tu sector, ¿aparece tu marca o la de tu competidor? Cada lunes te llega un reporte real a tu email, interpretado por un humano, con tres acciones concretas. Sin dashboards, sin login, sin curva de aprendizaje. Especialización mercado español.
-      </p>
-
-      <!-- Form -->
-      <form name="waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/gracias.html"
-            class="flex flex-col sm:flex-row gap-3 max-w-xl mb-4">
-        <input type="hidden" name="form-name" value="waitlist">
-        <p class="hidden">
-          <label>No rellenar: <input name="bot-field"></label>
-        </p>
-        <input
-          type="email"
-          name="email"
-          required
-          placeholder="tu@email.com"
-          class="flex-1 px-5 py-4 rounded-lg bg-white border-2 border-argus-navy/15 focus:border-argus-navy focus:outline-none text-base"
-        >
-        <button
-          type="submit"
-          class="px-7 py-4 bg-argus-navy text-argus-cream font-semibold rounded-lg hover:bg-argus-rust transition-colors duration-200 whitespace-nowrap"
-        >
-          Quiero mi auditoría gratis
-        </button>
-      </form>
-      <p class="text-sm text-argus-navy/60">
-        Auditoría inicial gratuita para los primeros 50. Sin spam, sin newsletter automatizada. Lo escribo yo, no un bot.
-      </p>
-    </div>
-  </section>
-
-  <!-- 3 datos -->
-  <section class="bg-argus-navy text-argus-cream py-16 md:py-24">
-    <div class="max-w-6xl mx-auto px-6">
-      <p class="text-sm font-semibold tracking-widest uppercase text-argus-gold mb-3">
-        Tres datos que ya nadie discute
-      </p>
-      <h2 class="serif text-3xl md:text-5xl font-semibold leading-tight mb-12 max-w-3xl">
-        La IA ya está respondiendo por ti. La pregunta es: <em class="text-argus-gold">¿te está nombrando?</em>
-      </h2>
-
-      <div class="grid md:grid-cols-3 gap-8 md:gap-12">
-        <div>
-          <div class="text-5xl md:text-6xl font-bold text-argus-gold mb-3 serif">1B+</div>
-          <p class="text-lg leading-relaxed text-argus-cream/85">
-            Consultas diarias responden ChatGPT, Claude, Perplexity y Gemini juntos. Si no nombran tu marca, tus clientes nuevos están eligiendo a otros.
-          </p>
-        </div>
-        <div>
-          <div class="text-5xl md:text-6xl font-bold text-argus-gold mb-3 serif">60%</div>
-          <p class="text-lg leading-relaxed text-argus-cream/85">
-            De los hispanos pregunta a una IA antes de buscar en Google según Reuters Digital News Report 2025. La conducta cambió. El SEO clásico ya no basta.
-          </p>
-        </div>
-        <div>
-          <div class="text-5xl md:text-6xl font-bold text-argus-gold mb-3 serif">0</div>
-          <p class="text-lg leading-relaxed text-argus-cream/85">
-            Es el número de herramientas serias de monitoreo GEO en español. En USA hay diez. Aquí, nada. Y la ventana se cierra.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Qué obtienes -->
-  <section class="max-w-6xl mx-auto px-6 py-16 md:py-24">
-    <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-start">
+<main>
+  <div class="wrap">
+    <section class="hero">
       <div>
-        <p class="text-sm font-semibold tracking-widest uppercase text-argus-rust mb-3">Qué incluye tu auditoría gratis</p>
-        <h2 class="serif text-3xl md:text-5xl font-semibold leading-tight mb-6">
-          Un PDF a tu email. Cero humo. Datos accionables.
-        </h2>
-        <p class="text-lg text-argus-navy/80 leading-relaxed">
-          Me dices tu marca y sector. Yo ejecuto las queries reales que tus clientes harían en ChatGPT, Claude, Perplexity y Gemini. Identifico dónde apareces, dónde no, qué competidor te está comiendo y qué fuentes cita la IA. Te llega un PDF interpretado a tu email en 48h. No hay dashboard que aprender, no hay nada que instalar.
-        </p>
+        <h1>A hundred eyes<br>on <em>your</em> business.</h1>
+        <p class="sub">Argus never sleeps. It watches every open quote, unpaid invoice and cold lead — and chases them in your voice until they're a yes or a no.</p>
+        <a class="cta" href="#contact">Tell me what you chase every week →</a>
+        <span class="cta-note">Free trial first. You only pay once you've seen the money.</span>
       </div>
+      <aside class="ledger" aria-label="Example of a day's work by Argus">
+        <div class="ledger-head"><span><span class="dot"></span>Argus · today</span><span>watching</span></div>
+        <ul>
+          <li><time>09:12</time><span class="act">Quote #47 ($1,850, bathroom refit) — 4 days silent → <span class="gold">follow-up #2 sent</span></span></li>
+          <li><time>09:31</time><span class="act">Invoice #211 ($640, 12 days overdue) → <span class="gold">reminder sent</span></span></li>
+          <li><time>10:02</time><span class="act">Reply caught: “yes, book it” → <span class="ok">marked won · you were notified</span></span></li>
+          <li><time>11:15</time><span class="act">New lead: “how much for gutter cleaning?” → <span class="gold">answered with your rates</span></span></li>
+          <li><time>13:40</time><span class="act">Supplier order #88 running late → <span class="gold">nudge sent</span></span></li>
+          <li><time>15:22</time><span class="act">Customer asked for a discount → <span class="warn">escalated to you</span></span></li>
+        </ul>
+      </aside>
+    </section>
+  </div>
 
-      <div class="space-y-6">
-        <div class="flex gap-4">
-          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-argus-navy text-argus-cream flex items-center justify-center font-bold">1</div>
-          <div>
-            <h3 class="font-semibold text-lg mb-1">Dónde apareces y dónde no</h3>
-            <p class="text-argus-navy/70">Posición exacta de tu marca en respuestas de cada IA, para 30 queries de tu sector.</p>
-          </div>
+  <div class="eyes" aria-hidden="true">
+    <svg viewBox="0 0 26 16"><g class="lid"><ellipse cx="13" cy="8" rx="12" ry="7" fill="none" stroke="#d4a047" stroke-width="1.2"/><circle cx="13" cy="8" r="2.6" fill="#d4a047"/></g></svg>
+    <svg viewBox="0 0 26 16"><ellipse cx="13" cy="8" rx="12" ry="7" fill="none" stroke="#d4a047" stroke-width="1.2"/><circle cx="13" cy="8" r="2.6" fill="#d4a047"/></svg>
+    <svg class="awake" viewBox="0 0 26 16"><g class="lid"><ellipse cx="13" cy="8" rx="12" ry="7" fill="none" stroke="#d4a047" stroke-width="1.2"/><circle cx="13" cy="8" r="2.6" fill="#d4a047"/></g></svg>
+    <svg viewBox="0 0 26 16"><ellipse cx="13" cy="8" rx="12" ry="7" fill="none" stroke="#d4a047" stroke-width="1.2"/><circle cx="13" cy="8" r="2.6" fill="#d4a047"/></svg>
+    <svg viewBox="0 0 26 16"><g class="lid"><ellipse cx="13" cy="8" rx="12" ry="7" fill="none" stroke="#d4a047" stroke-width="1.2"/><circle cx="13" cy="8" r="2.6" fill="#d4a047"/></g></svg>
+    <svg viewBox="0 0 26 16"><ellipse cx="13" cy="8" rx="12" ry="7" fill="none" stroke="#d4a047" stroke-width="1.2"/><circle cx="13" cy="8" r="2.6" fill="#d4a047"/></svg>
+    <svg class="awake" viewBox="0 0 26 16"><g class="lid"><ellipse cx="13" cy="8" rx="12" ry="7" fill="none" stroke="#d4a047" stroke-width="1.2"/><circle cx="13" cy="8" r="2.6" fill="#d4a047"/></g></svg>
+    <svg viewBox="0 0 26 16"><ellipse cx="13" cy="8" rx="12" ry="7" fill="none" stroke="#d4a047" stroke-width="1.2"/><circle cx="13" cy="8" r="2.6" fill="#d4a047"/></svg>
+    <svg viewBox="0 0 26 16"><g class="lid"><ellipse cx="13" cy="8" rx="12" ry="7" fill="none" stroke="#d4a047" stroke-width="1.2"/><circle cx="13" cy="8" r="2.6" fill="#d4a047"/></g></svg>
+  </div>
+
+  <div class="wrap">
+    <section class="pain">
+      <p class="eyebrow">The problem</p>
+      <h2>You didn't buy a business. You bought a job.</h2>
+      <p>You send the quote. Nobody answers. You mean to follow up, but there's a van to load and a customer on the phone. Five days later, the job went to someone else.</p>
+      <p>The quotes, the invoices, the lead that wrote on Sunday — none of it lives anywhere. It all lives in your head.</p>
+      <p class="punch">You are the system.</p>
+    </section>
+
+    <section>
+      <p class="eyebrow">What Argus does</p>
+      <h2>Argus takes the chasing off your head.</h2>
+      <div class="triad">
+        <div><h3>Watches</h3><p>The state of things: quotes with no answer, invoices past due, leads going cold.</p></div>
+        <div><h3>Remembers</h3><p>The context: who asked what, when, and what you said last time.</p></div>
+        <div><h3>Acts</h3><p>On its own, in your voice: sends the follow-up, answers the usual questions, nudges the supplier.</p></div>
+      </div>
+      <p class="not-line">It only interrupts you when something needs a human. The rest just gets done. Not a chatbot. Not another app you have to check.</p>
+    </section>
+
+    <section>
+      <p class="eyebrow">How it works</p>
+      <h2>I set it up for you. You just say yes or no.</h2>
+      <ol class="steps">
+        <li>You tell me what you chase every week.</li>
+        <li>I build your watcher and plug it into your email.</li>
+        <li>You try it free for a few weeks. You'll see every euro it recovers.</li>
+        <li>If it pays for itself, we talk price. If not, you walk away.</li>
+      </ol>
+    </section>
+
+    <section>
+      <p class="eyebrow">Pricing</p>
+      <h2>One recovered job usually pays the month.</h2>
+      <div class="plans">
+        <div class="plan">
+          <h3>Quote watcher</h3>
+          <div class="price">€199<small>/month</small></div>
+          <p>Chases every unanswered quote until it's a yes or a no. Weekly results report: what was recovered, in euros.</p>
         </div>
-        <div class="flex gap-4">
-          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-argus-navy text-argus-cream flex items-center justify-center font-bold">2</div>
-          <div>
-            <h3 class="font-semibold text-lg mb-1">Top 3 competidores que te están comiendo</h3>
-            <p class="text-argus-navy/70">Quién aparece en tu lugar, con qué frecuencia y por qué cita la IA esas marcas y no la tuya.</p>
-          </div>
-        </div>
-        <div class="flex gap-4">
-          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-argus-navy text-argus-cream flex items-center justify-center font-bold">3</div>
-          <div>
-            <h3 class="font-semibold text-lg mb-1">URLs citadas como fuente</h3>
-            <p class="text-argus-navy/70">Lista exacta de páginas que las IAs usan para responder. Saber esto vale oro.</p>
-          </div>
-        </div>
-        <div class="flex gap-4">
-          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-argus-navy text-argus-cream flex items-center justify-center font-bold">4</div>
-          <div>
-            <h3 class="font-semibold text-lg mb-1">Tres acciones para empezar mañana</h3>
-            <p class="text-argus-navy/70">No teoría, recomendaciones concretas adaptadas a tu marca y sector.</p>
-          </div>
+        <div class="plan featured">
+          <span class="tag">The full promise</span>
+          <h3>Stop being the system</h3>
+          <div class="price">from €500<small>/month</small></div>
+          <p>Every watcher your business needs: quotes, invoices, leads, stock. With my hands on the setup, a weekly report, and one single place for real exceptions.</p>
         </div>
       </div>
+      <p class="trial-note">Free trial first. You only pay once you've seen the money.</p>
+    </section>
+
+    <section class="who">
+      <p class="eyebrow">Who's behind this</p>
+      <h2>One person. In public.</h2>
+      <p>I'm Dani. I build Argus alone and tell it all as it happens at <a href="https://x.com/byargos">@byargos</a>. I'm setting up the first watchers with real businesses right now.</p>
+    </section>
+  </div>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <p class="eyebrow">Talk to me</p>
+      <h2>Tell me what you chase every week.</h2>
+      <p class="lede">Two lines about the thing that eats your evenings — quotes, invoices, whatever. I'll tell you straight if Argus can do it for you. And if it can't, I'll tell you that too.</p>
+      <form name="waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+        <input type="hidden" name="form-name" value="waitlist">
+        <div class="hp"><label for="bot-field">Don't fill this in</label><input id="bot-field" name="bot-field"></div>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+        <label for="message">What do you chase every week?</label>
+        <textarea id="message" name="message" required></textarea>
+        <button class="cta" type="submit">Send it to Argus</button>
+      </form>
     </div>
   </section>
+</main>
 
-  <!-- About -->
-  <section class="bg-argus-navy/5 py-16 md:py-24">
-    <div class="max-w-4xl mx-auto px-6">
-      <div class="grid md:grid-cols-3 gap-8 items-start">
-        <div class="md:col-span-1">
-          <div class="w-32 h-32 rounded-full bg-argus-navy flex items-center justify-center">
-            <svg width="80" height="80" viewBox="0 0 100 100" class="eye">
-              <circle cx="50" cy="50" r="45" fill="#1a1f3a"/>
-              <circle cx="50" cy="50" r="30" fill="#f4f1de"/>
-              <circle cx="50" cy="50" r="14" fill="#1a1f3a"/>
-              <circle cx="56" cy="44" r="5" fill="#f4f1de"/>
-            </svg>
-          </div>
-        </div>
-        <div class="md:col-span-2">
-          <p class="text-sm font-semibold tracking-widest uppercase text-argus-rust mb-3">Quién está detrás</p>
-          <h2 class="serif text-2xl md:text-4xl font-semibold leading-tight mb-4">
-            Soy Dani Go y estoy construyendo Argus en público.
-          </h2>
-          <p class="text-lg text-argus-navy/80 leading-relaxed mb-6">
-            Cada semana cuento el avance en X. Sin humo, sin promesas, datos reales sobre cómo te ven las IAs y por qué eso ya está decidiendo quién gana en tu sector.
-          </p>
-          <div class="flex flex-wrap gap-3">
-            <a href="https://x.com/byargos" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 bg-argus-navy text-argus-cream rounded-lg hover:bg-argus-rust transition-colors text-sm font-medium">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-              @byargos
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ Section -->
-  <section class="bg-argus-cream py-16 md:py-24 border-t border-argus-navy/10">
-    <div class="max-w-4xl mx-auto px-6">
-      <p class="text-sm font-semibold tracking-widest uppercase text-argus-rust mb-3 text-center">
-        Preguntas frecuentes
-      </p>
-      <h2 class="serif text-3xl md:text-5xl font-semibold leading-tight mb-12 text-center">
-        Todo sobre <em class="text-argus-rust">GEO, AEO</em> y por qué tu marca lo necesita.
-      </h2>
-
-      <div class="space-y-4">
-        <details class="group bg-white rounded-lg border border-argus-navy/10 overflow-hidden">
-          <summary class="flex justify-between items-center cursor-pointer px-6 py-5 font-semibold text-lg hover:bg-argus-navy/5">
-            ¿Qué es GEO (Generative Engine Optimization) y por qué importa en 2026?
-            <svg class="w-5 h-5 text-argus-rust transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </summary>
-          <div class="px-6 pb-6 text-argus-navy/80 leading-relaxed">
-            GEO (Generative Engine Optimization) es la disciplina de optimizar tu marca para que aparezca y sea citada cuando las IAs generativas como <strong>ChatGPT</strong>, <strong>Claude</strong>, <strong>Perplexity</strong> o <strong>Gemini</strong> responden preguntas a sus usuarios. En 2026, más del 60% de los hispanos pregunta a una IA antes de buscar en Google según Reuters, por lo que el GEO se ha convertido en el nuevo SEO para marcas que quieren seguir siendo descubiertas.
-          </div>
-        </details>
-
-        <details class="group bg-white rounded-lg border border-argus-navy/10 overflow-hidden">
-          <summary class="flex justify-between items-center cursor-pointer px-6 py-5 font-semibold text-lg hover:bg-argus-navy/5">
-            ¿En qué se diferencia GEO de SEO tradicional?
-            <svg class="w-5 h-5 text-argus-rust transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </summary>
-          <div class="px-6 pb-6 text-argus-navy/80 leading-relaxed">
-            El <strong>SEO clásico</strong> optimiza para que aparezcas en los resultados de búsqueda de Google. El <strong>GEO</strong> optimiza para que aparezcas dentro de las respuestas generadas por las IAs. En GEO no compites por posiciones en una lista de enlaces azules, sino por ser citado como recomendación dentro de un texto generado. Ambos coexisten y se complementan, y las señales que mejoran uno suelen mejorar el otro.
-          </div>
-        </details>
-
-        <details class="group bg-white rounded-lg border border-argus-navy/10 overflow-hidden">
-          <summary class="flex justify-between items-center cursor-pointer px-6 py-5 font-semibold text-lg hover:bg-argus-navy/5">
-            ¿Cómo funciona Argus exactamente?
-            <svg class="w-5 h-5 text-argus-rust transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </summary>
-          <div class="px-6 pb-6 text-argus-navy/80 leading-relaxed">
-            Argus es <strong>un servicio, no una plataforma</strong>. Cada semana ejecuto manualmente las queries reales que tus clientes harían en <strong>ChatGPT</strong>, <strong>Claude</strong>, <strong>Perplexity</strong> y <strong>Gemini</strong> sobre tu sector. Identifico dónde apareces, dónde no, qué competidores están en tu lugar y qué fuentes cita la IA. Cada lunes recibes un <strong>PDF interpretado</strong> en tu email con tres acciones concretas para esa semana. No hay dashboard que entrar, no hay nada que aprender.
-          </div>
-        </details>
-
-        <details class="group bg-white rounded-lg border border-argus-navy/10 overflow-hidden">
-          <summary class="flex justify-between items-center cursor-pointer px-6 py-5 font-semibold text-lg hover:bg-argus-navy/5">
-            ¿Funciona Argus para marcas españolas y LATAM?
-            <svg class="w-5 h-5 text-argus-rust transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </summary>
-          <div class="px-6 pb-6 text-argus-navy/80 leading-relaxed">
-            Sí. Argus es el primer servicio GEO/AEO específicamente <strong>especializado en mercado hispano</strong>. Las queries se ejecutan en <strong>español neutro</strong>, <strong>español de España</strong> o variantes locales (México, Argentina, Colombia, Chile) según tu mercado. Las IAs responden de manera distinta según el idioma y la región, y Argus captura esa diferencia. También cubrimos clientes internacionales en inglés a petición.
-          </div>
-        </details>
-
-        <details class="group bg-white rounded-lg border border-argus-navy/10 overflow-hidden">
-          <summary class="flex justify-between items-center cursor-pointer px-6 py-5 font-semibold text-lg hover:bg-argus-navy/5">
-            ¿Cuándo veré resultados después de empezar a optimizar para GEO?
-            <svg class="w-5 h-5 text-argus-rust transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </summary>
-          <div class="px-6 pb-6 text-argus-navy/80 leading-relaxed">
-            Los cambios en cómo las IAs te citan suelen reflejarse entre 2 y 6 semanas después de implementar mejoras (publicar contenido en fuentes que las IAs usan, mejorar tu presencia en Wikipedia, Reddit y medios sectoriales, conseguir reseñas). Argus mide la evolución semana a semana para que veas exactamente qué acciones funcionan y cuáles no.
-          </div>
-        </details>
-
-        <details class="group bg-white rounded-lg border border-argus-navy/10 overflow-hidden">
-          <summary class="flex justify-between items-center cursor-pointer px-6 py-5 font-semibold text-lg hover:bg-argus-navy/5">
-            ¿Tengo que abandonar mi SEO actual para hacer GEO?
-            <svg class="w-5 h-5 text-argus-rust transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </summary>
-          <div class="px-6 pb-6 text-argus-navy/80 leading-relaxed">
-            No. <strong>SEO y GEO son complementarios</strong>. Las mismas señales que mejoran tu SEO (autoridad, contenido de calidad, citas en medios) también mejoran tu GEO porque las IAs leen y aprenden de los mismos sitios que Google indexa. Argus identifica las acciones con doble retorno: mejoran tu posición en Google Y tu visibilidad en las IAs.
-          </div>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA final -->
-  <section class="max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
-    <h2 class="serif text-3xl md:text-5xl font-semibold leading-tight mb-6">
-      Las IAs ya están respondiendo. <em class="text-argus-rust">Cien ojos te dicen qué dicen de ti.</em>
-    </h2>
-    <p class="text-lg text-argus-navy/70 mb-10 max-w-2xl mx-auto">
-      Auditoría inicial gratuita para los primeros 50. PDF a tu email en 48h. Cero código, cero dashboard, cero compromiso.
-    </p>
-    <form name="waitlist-bottom" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/gracias.html"
-          class="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto">
-      <input type="hidden" name="form-name" value="waitlist-bottom">
-      <p class="hidden">
-        <label>No rellenar: <input name="bot-field"></label>
-      </p>
-      <input
-        type="email"
-        name="email"
-        required
-        placeholder="tu@email.com"
-        class="flex-1 px-5 py-4 rounded-lg bg-white border-2 border-argus-navy/15 focus:border-argus-navy focus:outline-none text-base"
-      >
-      <button
-        type="submit"
-        class="px-7 py-4 bg-argus-navy text-argus-cream font-semibold rounded-lg hover:bg-argus-rust transition-colors duration-200 whitespace-nowrap"
-      >
-        Quiero mi reporte gratis
-      </button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer class="border-t border-argus-navy/10 py-10">
-    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-argus-navy/60">
-      <div class="flex items-center gap-2">
-        <svg width="20" height="20" viewBox="0 0 100 100">
-          <circle cx="50" cy="50" r="45" fill="#1a1f3a"/>
-          <circle cx="50" cy="50" r="25" fill="#f4f1de"/>
-          <circle cx="50" cy="50" r="12" fill="#1a1f3a"/>
-          <circle cx="55" cy="45" r="4" fill="#f4f1de"/>
-        </svg>
-        <span>Argus · byargus.com · construido con cien ojos y poco sueño</span>
-      </div>
-      <div class="flex gap-4">
-        <a href="https://x.com/byargos" target="_blank" rel="noopener" class="hover:text-argus-navy">@byargos</a>
-      </div>
-    </div>
-  </footer>
+<footer class="site-foot">
+  <span>Argus · A hundred eyes on your business</span>
+  <span>Built in public at <a href="https://x.com/byargos">@byargos</a> · <a href="/es/" lang="es">Versión en español</a></span>
+</footer>
 
 </body>
 </html>
