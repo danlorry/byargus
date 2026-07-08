@@ -130,3 +130,7 @@ textarea{min-height:130px;resize:vertical}
   .ledger-head .dot{animation:none}
   html{scroll-behavior:auto}
 }
+
+/* Demo video */
+.demo video { width: 100%; border-radius: 12px; border: 1px solid rgba(212,160,71,.25); display: block; margin-top: 8px; }
+.demo .demo-note { font-size: .95rem; opacity: .75; margin-top: 10px; }
